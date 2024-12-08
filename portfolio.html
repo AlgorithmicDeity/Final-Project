@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - The Grey Grove</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+    <style>
+        /* Portfolio Page Specific Styles */
+        .portfolio-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .portfolio-title {
+            text-align: center;
+            margin-bottom: 30px;
+            font-size: 2rem;
+            color: var(--runic-gold);
+        }
+
+        .portfolio-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        .project-card {
+            background-color: var(--stormy-sea-light);
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease;
+        }
+
+        .project-card img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .project-card:hover {
+            transform: scale(1.05);
+        }
+
+        .project-content {
+            padding: 15px;
+            text-align: center;
+        }
+
+        .project-content h3 {
+            margin-bottom: 10px;
+            color: var(--runic-gold);
+        }
+
+        .project-content p {
+            color: var(--etherial-white);
+            font-size: 1rem;
+        }
+
+        @media screen and (max-width: 768px) {
+            .portfolio-grid {
+                grid-template-columns: 1fr; /* Single column on small screens */
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <h1>The Grey Grove</h1>
+        <!-- Hamburger Icon -->
+        <div class="hamburger-menu" id="menu-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+        <!-- Navigation Links -->
+        <nav id="nav-menu">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="cosmology.html">Norse Cosmology</a></li>
+                <li><a href="about.html">About the Grey Path</a></li>
+                <li><a href="shadow-work.html">Shadow Work</a></li>
+                <li><a href="runes.html">Runes & Divination</a></li>
+                <li><a href="rituals.html">Rituals & Offerings</a></li>
+                <li><a href="lore-library.html">The Lore Library</a></li>
+                <li><a href="community.html">Community & Resources</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="portfolio-container">
+        <h2 class="portfolio-title">My Portfolio</h2>
+        <p class="text-center">Below are screenshots and explanations of projects completed during this course.</p>
+
+        <!-- Portfolio Grid -->
+        <div class="portfolio-grid">
+            <!-- Project 1 -->
+            <div class="project-card">
+                <img src="images/first.png" alt="Project 1 Screenshot">
+                <div class="project-content">
+                    <h3>Introduction</h3>
+                    <p>This was our introductory project and I remember being so excited and thinking it was so cool
+                        and easy right of the bat to be able to add color and font. I didn't realize how much growth 
+                        would occur in such a short amount of time.</p>
+                </div>
+            </div>
+
+            <!-- Project 2 -->
+            <div class="project-card">
+                <img src="images/Witchy.png" alt="Project 2 Screenshot">
+                <div class="project-content">
+                    <h3>Witchy Website</h3>
+                    <p>I can't remember what project this was but I remember getting so frustrated trying to get my
+                        navigation to do what I wanted it to on this site.</p>
+                </div>
+            </div>
+
+            <!-- Project 3 -->
+            <div class="project-card">
+                <img src="images/ai.png" alt="Project 3 Screenshot">
+                <div class="project-content">
+                    <h3>AI Website</h3>
+                    <p>In this project, I distinctly remember the struggle I had making the photos resize and place
+                        correctly and working with columns as well.</p>
+                </div>
+            </div>
+
+            <!-- Project 4 -->
+            <div class="project-card">
+                <img src="images/final.png" alt="Project 4 Screenshot">
+                <div class="project-content">
+                    <h3>Final Project</h3>
+                    <p>This project demonstrates all of the growth and knowledge that I've accumulated throughout this
+                        course. I've pushed myself to create something that not only checks all of the boxes required but
+                        is something I would be proud to look back on and show people. I have struggled more than once on
+                        getting javascript to work correctly, and still have to remind myself to slow down because the
+                        smallest things can cause the whole thing to break.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 The Grey Grove | All Rights Reserved</p>
+    </footer>
+</body>
+</html>
