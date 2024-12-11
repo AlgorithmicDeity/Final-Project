@@ -1056,6 +1056,30 @@ footer {
     color: var(--runic-gold);
 }
 
+/* Back to Top Button Styling */
+#back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: var(--spooky-violet); /* Customize color */
+    color: var(--etherial-white); /* Text color */
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    font-size: 1rem;
+    cursor: pointer;
+    display: none; /* Hidden by default */
+    z-index: 1000;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease-in-out;
+}
+
+#back-to-top:hover {
+    background-color: var(--runic-gold); /* Change on hover */
+    color: var(--stormy-sea-dark); /* Text color on hover */
+    transform: scale(1.1);
+}
+
 /* Social Media Section */
 .social-media {
     text-align: center;
