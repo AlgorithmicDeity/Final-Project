@@ -3688,7 +3688,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // Show the button after scrolling 300px
     window.addEventListener("scroll", () => {
-        if (window.scrollY > 300) {
+        if (window.scrollY > 20) {
             backToTopButton.style.display = "block";
         } else {
             backToTopButton.style.display = "none";
